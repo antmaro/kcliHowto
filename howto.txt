@@ -1,0 +1,20 @@
+
++ Launch a plan
+# kcli plan -f plans/simple_vms_plan.yml plan_name
+
++ Remove a plan
+# kcli plan -d plan_name 
+
++ Download kvm image (by default in /var/lib/libvirt/images)
+# kcli donwload centos7
+
++ Create new VM with centos7
+See the templates to use
+# kcli list -t 
+# kcli vm -p CentOS-7-x86_64-GenericCloud.qcow2 vm1
+
++ Delete VM
+# kcli delete vm1
+
++ Add disk to vm tower.lab.net of 20G from VMs pool
+kcli disk -s 20 -p VMs tower.lab.net

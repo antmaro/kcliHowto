@@ -1,0 +1,173 @@
+bastion.info.net:
+  memory: 2048
+  numcpus: 1
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.46
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.111
+  disks:
+   - size: 10
+   - size: 30
+  pool: default
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False
+
+ocpmas01.info.net:
+  memory: 2048
+  numcpus: 1
+  nets: 
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.40
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.111
+  disks:
+   - size: 10
+   - size: 20
+  pool: default
+  template: rhel-server-7.5-x86_64-kvm.qcow2 
+  reservedns: False
+  reservehost: False
+
+ocpmas02.info.net:
+  memory: 2048
+  numcpus: 1
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.41
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.111
+  disks:
+   - size: 10
+   - size: 20
+  pool: default
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False
+
+ocpmas03.info.net:
+  memory: 2048
+  numcpus: 1
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.48
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.111
+  disks:
+   - size: 10
+   - size: 20
+  pool: default
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False
+
+ocpnode01.info.net:
+  memory: 2048
+  numcpus: 1
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.42
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.111
+  disks:
+   - size: 10
+   - size: 20
+  pool: default
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False
+
+ocpnode02.info.net:
+  memory: 2048
+  numcpus: 1
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.43
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.111
+  disks:
+   - size: 10
+   - size: 20
+  pool: default
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False
+
+ocpinfra01.info.net:
+  memory: 8192
+  numcpus: 2
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.44
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.111
+  disks:
+   - size: 10
+   - size: 20
+   - size: 30
+  pool: default
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False
+
+ocpinfra02.info.net:
+  memory: 8192
+  numcpus: 2
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.45
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.111
+  disks:
+   - size: 10
+   - size: 20
+   - size: 30
+  pool: default
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False
+
+ocpinfra03.info.net:
+  memory: 8192
+  numcpus: 2
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.47
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.111
+  disks:
+   - size: 10
+   - size: 20
+   - size: 30
+  pool: default
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False

@@ -1,0 +1,76 @@
+bastion.lab.net:
+  memory: 512
+  numcpus: 1
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.2
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.254
+  disks:
+   - size: 10
+   - size: 30
+  pool: VMs
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False
+
+ocpmaster.lab.net:
+  memory: 2048
+  numcpus: 1
+  nets: 
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.3
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.254
+  disks:
+   - size: 10
+   - size: 20
+  pool: VMs
+  template: rhel-server-7.5-x86_64-kvm.qcow2 
+  reservedns: False
+  reservehost: False
+
+ocpnode01.lab.net:
+  memory: 2048
+  numcpus: 1
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.4
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.254
+  disks:
+   - size: 10
+   - size: 20
+  pool: VMs
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False
+
+ocpnode02.lab.net:
+  memory: 2048
+  numcpus: 1
+  nets:
+   - default
+   - name: default
+     nic: eth0
+     ip: 192.168.122.5
+     mask: 255.255.255.0
+     gateway: 192.168.122.1
+     dns: 192.168.122.254
+  disks:
+   - size: 10
+   - size: 20
+  pool: VMs
+  template: rhel-server-7.5-x86_64-kvm.qcow2
+  reservedns: False
+  reservehost: False
+
