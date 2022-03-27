@@ -1,0 +1,18 @@
+default:
+  client: localhost
+
+myovirt:
+  type: ovirt
+  host: tamovirt
+  user: admin@internal
+  password: ***
+  datacenter: HomeLab
+  cluster: HomeLab
+  ca_file: ~/.kcli/ovirt.pem
+  org: Home
+
+localhost:
+  host: 127.0.0.1
+  pool: default
+  session: false
+  url: qemu:///system
